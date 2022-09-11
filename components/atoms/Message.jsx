@@ -1,4 +1,5 @@
-const Message = ({ state }) => {
+const Message = ({ state, text, action}) => {
+
     return (
         <div className="message">
             <span className="lock">
@@ -9,11 +10,11 @@ const Message = ({ state }) => {
                 }
             </span>
             <p className={state ? 'text' : 'text-2'}>
-                thisañsdkjfañsjdfñajsdfñjasldkfjlasjdfañlskjdflkñajsdfñlkjañsjkdfñalskjdf
+                {text}
             </p>
             <div className="options">
                 {state ?
-                    <button className="button">Decrypt</button>
+                    <button className="button" onClick={action}>Decrypt</button>
                     :
                     <button className="button delete">Delete</button>
                 }
