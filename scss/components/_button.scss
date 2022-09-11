@@ -1,0 +1,19 @@
+.button {
+    background-color: rgb(69, 114, 238);
+    color: rgb(232, 237, 250);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid rgb(42, 92, 231);
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(.95);
+}
+.delete{
+    background-color: rgb(255, 103, 103);
+    color: rgb(255, 234, 234);
+    border: 1px solid rgb(248, 71, 71);
+}

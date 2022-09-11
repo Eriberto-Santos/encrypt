@@ -1,0 +1,30 @@
+.layout {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    min-height: 100vh;
+}
+
+
+.main-container__section-1 {
+    height: 100%;
+    border-right: 1px solid #eee;
+    padding: 1rem;
+}
+.main-container__section-2{
+    border-right: 1px solid #eee;
+}
+.main-container__section-2,
+.main-container__section-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
